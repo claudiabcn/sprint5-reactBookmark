@@ -4,3 +4,7 @@ export interface ButtonProps {
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
 }
+
+export interface LogoProps {
+  variant: 'black' | 'white';
+}
