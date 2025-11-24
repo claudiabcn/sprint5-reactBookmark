@@ -1,13 +1,11 @@
-import { Button } from "../src/components/atoms/button";
-import { Logo } from "./components/atoms/Logo";
-import { Icon } from "./components/atoms/Icon";
+import { NavBar } from "./components/molecules/NavBar";
 
 function App() {
   return (
     <div>
-      <Button variant="red">Login</Button>
-      <Logo variant="black"></Logo>
-      <Icon variant="facebook"></Icon>
+      <NavBar type="header" logoVariant="white" />
+
+      <NavBar type="footer" logoVariant="black" />
     </div>
   );
 }

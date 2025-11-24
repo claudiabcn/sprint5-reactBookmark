@@ -10,5 +10,10 @@ export interface LogoProps {
 }
 
 export interface IconProps {
-  variant: 'facebook' | 'twitter';
+  variant: 'facebook' | 'twitter'| 'hamburguer'| 'close';
+}
+
+export interface NavBarProps {
+  type: 'header' | 'footer';
+  logoVariant: 'white' | 'black';
 }
