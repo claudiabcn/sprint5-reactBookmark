@@ -8,3 +8,7 @@ export interface ButtonProps {
 export interface LogoProps {
   variant: 'black' | 'white';
 }
+
+export interface IconProps {
+  variant: 'facebook' | 'twitter';
+}
