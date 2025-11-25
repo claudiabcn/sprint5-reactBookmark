@@ -17,3 +17,9 @@ export interface NavBarProps {
   type: 'header' | 'footer';
   logoVariant: 'white' | 'black';
 }
+export interface FeatureCard {
+    id: string;
+    title: string;
+    description: string;
+    image: string; 
+}
