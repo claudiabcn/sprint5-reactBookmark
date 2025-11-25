@@ -1,12 +1,18 @@
-import { NavBar } from "./components/molecules/NavBar";
+import { HeaderNav } from './components/molecules/HeaderNav';
+import { FooterNav } from './components/molecules/FooterNav';
 
 function App() {
   return (
-    <div>
-      <NavBar type="header" logoVariant="white" />
+    <>
+      <header className="header">
+        <HeaderNav />
+      </header>
 
-      <NavBar type="footer" logoVariant="black" />
-    </div>
+    
+      <footer className="footer">
+        <FooterNav />
+      </footer>
+    </>
   );
 }
 
