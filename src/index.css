@@ -765,9 +765,6 @@ body {
     padding: var(--small-gap);
   }
 
-  .footer-brand {
-    margin-bottom: 10px;
-  }
 
   .nav-menu {
     flex-direction: column;

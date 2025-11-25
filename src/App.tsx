@@ -1,5 +1,6 @@
 import { HeaderNav } from './components/molecules/HeaderNav';
 import { FooterNav } from './components/molecules/FooterNav';
+import { Hero } from './components/organisms/Hero';
 
 function App() {
   return (
@@ -8,7 +9,10 @@ function App() {
         <HeaderNav />
       </header>
 
-    
+<main>
+<Hero />
+</main>
+
       <footer className="footer">
         <FooterNav />
       </footer>
