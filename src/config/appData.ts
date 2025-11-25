@@ -20,3 +20,9 @@ export const features: FeatureCard[] = [
     description: 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
   }
 ];
+
+export const browsers: Browser[] = [
+  { name: 'Chrome', version: '62', image: '..assets/images/logo-chrome.svg' },
+  { name: 'Firefox', version: '55', image: '..assets/images/logo-firefox.svg' },
+  { name: 'Opera', version: '46', image: '..assets/images/logo-opera.svg' }
+];
