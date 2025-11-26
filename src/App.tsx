@@ -2,6 +2,7 @@ import { HeaderNav } from './components/organisms/HeaderNav';
 import { FooterNav } from './components/organisms/FooterNav';
 import { Hero } from './components/organisms/Hero';
 import { Features } from './components/organisms/Features';
+import { Extensions } from './components/organisms/Extensions';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
 <main>
 <Hero />
 <Features/>
+<Extensions/>
+
 </main>
 
       <footer className="footer">

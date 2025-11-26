@@ -22,7 +22,7 @@ export const features: FeatureCard[] = [
 ];
 
 export const browsers: Browser[] = [
-  { name: 'Chrome', version: '62', image: '..assets/images/logo-chrome.svg' },
-  { name: 'Firefox', version: '55', image: '..assets/images/logo-firefox.svg' },
-  { name: 'Opera', version: '46', image: '..assets/images/logo-opera.svg' }
+  { name: 'Chrome', version: '62', image: '../assets/images/logo-chrome.svg' },
+  { name: 'Firefox', version: '55', image: '../assets/images/logo-firefox.svg' },
+  { name: 'Opera', version: '46', image: '../assets/images/logo-opera.svg' }
 ];
