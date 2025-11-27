@@ -106,9 +106,14 @@ p {
   background-color: white;
   padding: 20px 40px;
 }
+.logo-container {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+}
 
 .nav-container,
-.logo-container,
 .nav {
   display: flex;
   align-items: center;
@@ -120,10 +125,6 @@ p {
 .nav-container {
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.logo-container {
-  gap: 10px;
 }
 
 .logo {

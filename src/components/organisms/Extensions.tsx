@@ -3,7 +3,7 @@ import { browsers } from "../../config/appData";
 
 export const Extensions= () => {
 return (
-        <section id='pricing' className="extension">
+        <section id='extensions' className="extension">
             <div className="extension-header">
                 <h2 className="section-header-h2">Download the extension</h2>
                 <p>

@@ -6,5 +6,8 @@ export const Logo = ({ variant }: LogoProps) => {
     white: "../assets/images/logo-bookmark-white.svg",
   };
 
-  return <img src={logoMap[variant]} alt="Bookmark Logo" className="logo" />;
+  return (  <a href="/" aria-label="Ir a inicio">
+    <img src={logoMap[variant]} alt="Bookmark Logo" className="logo" />
+  </a>
+);
 };
