@@ -104,27 +104,23 @@ p {
 
 .header {
   background-color: white;
-  padding: 20px 40px;
-}
-.logo-container {
-  gap: 10px;
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-}
-
-.nav-container,
-.nav {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 0;
 }
 
 .nav-container {
+  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-wrap: nowrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
@@ -132,13 +128,18 @@ p {
 }
 
 .nav {
+  display: flex;
+  align-items: center;
   gap: var(--standard-gap);
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu {
   display: flex;
   list-style: none;
   gap: var(--standard-gap);
+  margin: 0;
 }
 
 .nav-menu li a {
@@ -420,6 +421,9 @@ p {
   font-weight: bold;
   width: 100%;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   color: var(--text-dark);
   transition: color var(--transition);
@@ -430,14 +434,21 @@ p {
 }
 
 .faq-answer {
-  display: none;
   margin-top: 10px;
   color: var(--text-medium);
   font-size: 0.95rem;
+  animation: slideDown 0.3s ease-out;
+  max-height: 500px;
+  overflow: hidden;
 }
 
-.faq-button {
-  margin-top: 40px;
+.faq-arrow {
+  width: 12px;
+  height: 9px;
+}
+
+.faq-arrow.open {
+  transform: rotate(180deg);
 }
 
 .footer {
@@ -684,6 +695,10 @@ p {
 
   .faq {
     padding: 80px 20px;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
   }
 
   .faq-list {

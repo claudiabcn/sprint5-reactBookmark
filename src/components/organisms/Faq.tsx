@@ -1,5 +1,5 @@
 import { faqs } from "../../config/appData";
-import { FaqItem } from "../molecules/FaqAnswers"; 
+import { FaqItem } from "../molecules/FaqItem"; 
 
 export const Questions = () => {
   return (
