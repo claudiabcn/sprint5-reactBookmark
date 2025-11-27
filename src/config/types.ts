@@ -29,3 +29,8 @@ export interface Browser {
     version: string;
     image: string;
 }
+
+export interface FAQ {
+    title: string;
+    description: string;
+}

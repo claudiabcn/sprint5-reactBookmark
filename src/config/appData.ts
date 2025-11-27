@@ -1,4 +1,6 @@
 import type { FeatureCard} from './types';
+import type { Browser} from './types';
+import type { FAQ} from './types';
 
 export const features: FeatureCard[] = [
  {
@@ -26,3 +28,22 @@ export const browsers: Browser[] = [
   { name: 'Firefox', version: '55', image: '../assets/images/logo-firefox.svg' },
   { name: 'Opera', version: '46', image: '../assets/images/logo-opera.svg' }
 ];
+
+export const faqs: FAQ[] = [
+
+  {
+    title: 'What is Bookmark?',
+    description: 'Bookmark is a simple and powerful tool to manage your favorite Websites efficiently.'
+  },
+  {
+    title: 'How can I request a new browser?',
+    description: 'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.'
+  },
+  {
+    title: 'Is there a mobile app?',
+    description: 'We are currently working on a mobile version. Stay tuned for updates!'
+  },
+  {
+    title: 'What about other Chromium browsers?',
+    description: 'We are exploring support for other Chromium-based browsers like Brave and Vivaldi.'
+  }  ];

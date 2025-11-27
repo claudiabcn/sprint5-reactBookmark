@@ -3,6 +3,7 @@ import { FooterNav } from './components/organisms/FooterNav';
 import { Hero } from './components/organisms/Hero';
 import { Features } from './components/organisms/Features';
 import { Extensions } from './components/organisms/Extensions';
+import { Questions } from './components/organisms/Faq';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 <Hero />
 <Features/>
 <Extensions/>
+<Questions/>
 
 </main>
 
