@@ -437,7 +437,6 @@ p {
   margin-top: 10px;
   color: var(--text-medium);
   font-size: 0.95rem;
-  animation: slideDown 0.3s ease-out;
   max-height: 500px;
   overflow: hidden;
 }
@@ -455,6 +454,13 @@ p {
   background-color: var(--primary-blue);
   color: white;
   padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.newsletter {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 0px 0 0 0;
   text-align: center;
 }
 
@@ -480,12 +486,30 @@ p {
   margin-bottom: 40px;
 }
 
+
 .newsletter-form input {
   padding: 12px;
   border-radius: var(--border-radius);
   border: none;
   width: 100%;
   max-width: 300px;
+}
+.email-input-group {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+input.input-error {
+  border: 2px solid var(--primary-red);
+  background-color: #fff0f0;
+}
+
+.error-message {
+  color: var(--primary-red);
+  font-size: 0.85rem;
+  margin-top: 6px;
+
 }
 
 .footer-nav {

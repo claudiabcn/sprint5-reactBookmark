@@ -4,6 +4,7 @@ import { Hero } from './components/organisms/Hero';
 import { Features } from './components/organisms/Features';
 import { Extensions } from './components/organisms/Extensions';
 import { Questions } from './components/organisms/Faq';
+import { Newsletter } from './components/organisms/Contact';
 
 function App() {
   return (
@@ -11,16 +12,15 @@ function App() {
       <header className="header">
         <HeaderNav />
       </header>
+      <main>
+      <Hero />
+      <Features/>
+      <Extensions/>
+      <Questions/>
 
-<main>
-<Hero />
-<Features/>
-<Extensions/>
-<Questions/>
-
-</main>
-
+      </main>
       <footer className="footer">
+        <Newsletter/>
         <FooterNav />
       </footer>
     </>
