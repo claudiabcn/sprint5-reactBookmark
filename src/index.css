@@ -1,3 +1,7 @@
+/* ============================================
+   RESET Y CONFIGURACIÓN BASE
+   ============================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +9,12 @@
   font-family: Rubik, sans-serif;
 }
 
+/* ============================================
+   VARIABLES CSS
+   ============================================ */
+
 :root {
+  /* Colores */
   --primary-blue: #5267df;
   --primary-red: #fa5959;
   --dark-blue: #242946;
@@ -16,18 +25,26 @@
   --border-light: #ddd;
   --border-lighter: #ccc;
 
+  /* Tipografía */
   --font-size-clamp: clamp(0.9rem, 1vw, 1.5rem);
   --font-size-body: clamp(0.9rem, 1vw, 1.2rem);
-  --border-radius: 5px;
-  --transition: 0.3s ease;
-  --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.1);
-  --shadow-blue: 0 6px 16px rgba(82, 103, 223, 0.5);
 
+  /* Espaciado */
   --section-padding: 80px 40px;
   --mobile-padding: 60px 20px;
   --standard-gap: 30px;
   --small-gap: 20px;
+
+  /* Efectos */
+  --border-radius: 5px;
+  --transition: 0.3s ease;
+  --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --shadow-blue: 0 6px 16px rgba(82, 103, 223, 0.5);
 }
+
+/* ============================================
+   ESTILOS GLOBALES
+   ============================================ */
 
 body {
   background: white;
@@ -38,6 +55,10 @@ p {
   color: var(--text-medium);
   line-height: 1.6;
 }
+
+/* ============================================
+   UTILIDADES
+   ============================================ */
 
 .flex-center {
   display: flex;
@@ -50,6 +71,10 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ============================================
+   BOTONES
+   ============================================ */
 
 .btn {
   padding: 8px 16px;
@@ -91,7 +116,7 @@ p {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
   letter-spacing: 2px;
 }
 
@@ -99,8 +124,29 @@ p {
   background-color: white;
   color: #ff4d4d;
   border: 2px solid #ff4d4d;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
+
+.btn-login-mobile {
+  padding: 8px 16px;
+  font-size: var(--font-size-clamp);
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-login-mobile:hover {
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+/* ============================================
+   HEADER Y NAVEGACIÓN
+   ============================================ */
 
 .header {
   background-color: white;
@@ -153,6 +199,93 @@ p {
   color: var(--primary-blue);
 }
 
+/* ============================================
+   MENÚ MÓVIL
+   ============================================ */
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-toggle img {
+  height: 24px;
+  width: 24px;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 41, 70, 0.95);
+  display: none;
+  z-index: 999;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.mobile-menu-content a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.mobile-menu-content a:hover {
+  color: var(--primary-blue);
+}
+
+.mobile-menu-content .social-icons {
+  margin-top: 20px;
+}
+
+.mobile-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-nav li a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ============================================
+   SECCIÓN HERO
+   ============================================ */
+
 .hero {
   padding: 80px 40px 100px;
 }
@@ -203,12 +336,6 @@ p {
   max-width: 100%;
 }
 
-.blue-box {
-  position: absolute;
-  background-color: var(--primary-blue);
-  z-index: 0;
-}
-
 .hero-image .blue-box {
   top: 80px;
   right: -50px;
@@ -218,14 +345,19 @@ p {
   border-bottom-left-radius: 180px;
 }
 
-.feature-box .blue-box {
-  top: 100px;
-  right: 120px;
-  width: 120%;
-  max-width: 450px;
-  height: 320px;
-  border-bottom-left-radius: 160px;
+/* ============================================
+   ELEMENTOS DECORATIVOS
+   ============================================ */
+
+.blue-box {
+  position: absolute;
+  background-color: var(--primary-blue);
+  z-index: 0;
 }
+
+/* ============================================
+   SECCIÓN FEATURES
+   ============================================ */
 
 .features {
   padding: 100px 40px;
@@ -310,6 +442,15 @@ p {
   display: block;
 }
 
+.feature-box .blue-box {
+  top: 100px;
+  right: 120px;
+  width: 120%;
+  max-width: 450px;
+  height: 320px;
+  border-bottom-left-radius: 160px;
+}
+
 .text {
   position: relative;
   z-index: 2;
@@ -332,6 +473,10 @@ p {
 .text .btn {
   padding: 12px 24px;
 }
+
+/* ============================================
+   SECCIÓN EXTENSIONS
+   ============================================ */
 
 .extension {
   padding: 100px 40px;
@@ -398,6 +543,10 @@ p {
   width: 100%;
 }
 
+/* ============================================
+   SECCIÓN FAQ
+   ============================================ */
+
 .faq {
   padding: 100px 40px;
   text-align: center;
@@ -450,12 +599,9 @@ p {
   transform: rotate(180deg);
 }
 
-.footer {
-  background-color: var(--primary-blue);
-  color: white;
-  padding: 40px 0 0 0;
-  text-align: center;
-}
+/* ============================================
+   NEWSLETTER
+   ============================================ */
 
 .newsletter {
   background-color: var(--primary-blue);
@@ -486,7 +632,6 @@ p {
   margin-bottom: 40px;
 }
 
-
 .newsletter-form input {
   padding: 12px;
   border-radius: var(--border-radius);
@@ -494,6 +639,7 @@ p {
   width: 100%;
   max-width: 300px;
 }
+
 .email-input-group {
   position: relative;
   width: 100%;
@@ -509,7 +655,17 @@ input.input-error {
   color: var(--primary-red);
   font-size: 0.85rem;
   margin-top: 6px;
+}
 
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 40px 0 0 0;
+  text-align: center;
 }
 
 .footer-nav {
@@ -536,6 +692,10 @@ input.input-error {
   text-decoration: underline;
 }
 
+/* ============================================
+   ICONOS SOCIALES
+   ============================================ */
+
 .social-icons,
 .mobile-social {
   display: flex;
@@ -548,70 +708,9 @@ input.input-error {
   cursor: pointer;
 }
 
-.menu-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none;
-}
-
-.menu-toggle img {
-  height: 24px;
-  width: 24px;
-}
-
-.mobile-menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--dark-blue);
-  display: none;
-  z-index: 999;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.mobile-menu-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--standard-gap);
-}
-
-.mobile-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.mobile-nav li a {
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-login-mobile {
-  padding: 8px 16px;
-  font-size: var(--font-size-clamp);
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  font-weight: bold;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-
-.btn-login-mobile:hover {
-  background-color: white;
-  color: var(--dark-blue);
-}
-
+/* ============================================
+   MEDIA QUERIES - DESKTOP
+   ============================================ */
 
 @media (min-width: 769px) {
   .extension-cards {
@@ -627,7 +726,12 @@ input.input-error {
   }
 }
 
+/* ============================================
+   MEDIA QUERIES - MÓVIL Y TABLET
+   ============================================ */
+
 @media (max-width: 768px) {
+  /* Navegación */
   .nav-container {
     flex-direction: column;
     align-items: center;
@@ -646,6 +750,7 @@ input.input-error {
     display: none;
   }
 
+  /* Hero */
   .hero {
     padding: 80px 20px;
   }
@@ -664,6 +769,7 @@ input.input-error {
     gap: 10px;
   }
 
+  /* Features */
   .features {
     padding: 150px 20px;
   }
@@ -702,6 +808,7 @@ input.input-error {
     height: 200px;
   }
 
+  /* Extensions */
   .extension {
     padding: 0 20px;
   }
@@ -717,6 +824,7 @@ input.input-error {
     transform: none;
   }
 
+  /* FAQ */
   .faq {
     padding: 80px 20px;
   }
@@ -729,6 +837,7 @@ input.input-error {
     padding: 0 var(--small-gap);
   }
 
+  /* Footer */
   .footer-nav {
     flex-direction: column;
     align-items: center;

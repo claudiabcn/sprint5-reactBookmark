@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <HeaderNav />
+      <HeaderNav />
       </header>
       <main>
       <Hero />

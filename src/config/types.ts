@@ -6,7 +6,7 @@ export interface ButtonProps {
 }
 
 export interface LogoProps {
-  variant: 'black' | 'white';
+  variant: 'black' | 'white'| 'whiteplus';
 }
 
 export interface IconProps {
@@ -33,4 +33,15 @@ export interface Browser {
 export interface FAQ {
     title: string;
     description: string;
+}
+
+export interface MenuItem {
+    label: string;
+    href: string;
+}
+
+export interface MobileMenuProps {
+    items: MenuItem[];
+    isOpen: boolean;
+    onClose: () => void;
 }
