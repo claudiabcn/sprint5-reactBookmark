@@ -1,7 +1,3 @@
-/* ============================================
-   RESET Y CONFIGURACIÓN BASE
-   ============================================ */
-
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +5,9 @@
   font-family: Rubik, sans-serif;
 }
 
-/* ============================================
-   VARIABLES CSS
-   ============================================ */
 
 :root {
-  /* Colores */
+
   --primary-blue: #5267df;
   --primary-red: #fa5959;
   --dark-blue: #242946;
@@ -25,26 +18,22 @@
   --border-light: #ddd;
   --border-lighter: #ccc;
 
-  /* Tipografía */
+
   --font-size-clamp: clamp(0.9rem, 1vw, 1.5rem);
   --font-size-body: clamp(0.9rem, 1vw, 1.2rem);
 
-  /* Espaciado */
+
   --section-padding: 80px 40px;
   --mobile-padding: 60px 20px;
   --standard-gap: 30px;
   --small-gap: 20px;
 
-  /* Efectos */
+
   --border-radius: 5px;
   --transition: 0.3s ease;
   --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.1);
   --shadow-blue: 0 6px 16px rgba(82, 103, 223, 0.5);
 }
-
-/* ============================================
-   ESTILOS GLOBALES
-   ============================================ */
 
 body {
   background: white;
@@ -56,9 +45,6 @@ p {
   line-height: 1.6;
 }
 
-/* ============================================
-   UTILIDADES
-   ============================================ */
 
 .flex-center {
   display: flex;
@@ -72,9 +58,6 @@ p {
   align-items: center;
 }
 
-/* ============================================
-   BOTONES
-   ============================================ */
 
 .btn {
   padding: 8px 16px;
@@ -144,10 +127,6 @@ p {
   color: var(--dark-blue);
 }
 
-/* ============================================
-   HEADER Y NAVEGACIÓN
-   ============================================ */
-
 .header {
   background-color: white;
   padding: 20px 0;
@@ -195,13 +174,12 @@ p {
   transition: color var(--transition);
 }
 
-.nav-menu li a:hover {
-  color: var(--primary-blue);
+.nav-menu li a:hover,
+.footer-nav .nav-menu li a:hover {
+  color: var(--primary-red);
 }
 
-/* ============================================
-   MENÚ MÓVIL
-   ============================================ */
+
 
 .menu-toggle {
   background: none;
@@ -282,10 +260,6 @@ p {
   font-weight: bold;
 }
 
-/* ============================================
-   SECCIÓN HERO
-   ============================================ */
-
 .hero {
   padding: 80px 40px 100px;
 }
@@ -345,19 +319,11 @@ p {
   border-bottom-left-radius: 180px;
 }
 
-/* ============================================
-   ELEMENTOS DECORATIVOS
-   ============================================ */
-
 .blue-box {
   position: absolute;
   background-color: var(--primary-blue);
   z-index: 0;
 }
-
-/* ============================================
-   SECCIÓN FEATURES
-   ============================================ */
 
 .features {
   padding: 100px 40px;
@@ -402,7 +368,7 @@ p {
 }
 
 .tab:hover {
-  color: var(--text-dark);
+  color: var(--primary-red);
 }
 
 .features-content {
@@ -474,10 +440,6 @@ p {
   padding: 12px 24px;
 }
 
-/* ============================================
-   SECCIÓN EXTENSIONS
-   ============================================ */
-
 .extension {
   padding: 100px 40px;
   text-align: center;
@@ -543,10 +505,6 @@ p {
   width: 100%;
 }
 
-/* ============================================
-   SECCIÓN FAQ
-   ============================================ */
-
 .faq {
   padding: 100px 40px;
   text-align: center;
@@ -598,10 +556,6 @@ p {
 .faq-arrow.open {
   transform: rotate(180deg);
 }
-
-/* ============================================
-   NEWSLETTER
-   ============================================ */
 
 .newsletter {
   background-color: var(--primary-blue);
@@ -657,10 +611,6 @@ input.input-error {
   margin-top: 6px;
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
-
 .footer {
   background-color: var(--primary-blue);
   color: white;
@@ -688,14 +638,6 @@ input.input-error {
   font-size: 0.9rem;
 }
 
-.footer-nav .nav-menu li a:hover {
-  text-decoration: underline;
-}
-
-/* ============================================
-   ICONOS SOCIALES
-   ============================================ */
-
 .social-icons,
 .mobile-social {
   display: flex;
@@ -708,9 +650,11 @@ input.input-error {
   cursor: pointer;
 }
 
-/* ============================================
-   MEDIA QUERIES - DESKTOP
-   ============================================ */
+.social-icons img:hover,
+.mobile-social img:hover {
+  filter: invert(23%) sepia(96%) saturate(4912%) hue-rotate(0deg) brightness(95%) contrast(110%);
+}
+
 
 @media (min-width: 769px) {
   .extension-cards {
@@ -726,12 +670,9 @@ input.input-error {
   }
 }
 
-/* ============================================
-   MEDIA QUERIES - MÓVIL Y TABLET
-   ============================================ */
 
 @media (max-width: 768px) {
-  /* Navegación */
+
   .nav-container {
     flex-direction: column;
     align-items: center;
@@ -750,7 +691,7 @@ input.input-error {
     display: none;
   }
 
-  /* Hero */
+
   .hero {
     padding: 80px 20px;
   }
@@ -769,7 +710,7 @@ input.input-error {
     gap: 10px;
   }
 
-  /* Features */
+
   .features {
     padding: 150px 20px;
   }
@@ -785,6 +726,10 @@ input.input-error {
     padding: 15px 0;
     text-align: center;
     width: 100%;
+  }
+
+  .tab:hover {
+   color: var(--primary-red);
   }
 
   .tab.active {
@@ -808,7 +753,7 @@ input.input-error {
     height: 200px;
   }
 
-  /* Extensions */
+
   .extension {
     padding: 0 20px;
   }
@@ -824,7 +769,8 @@ input.input-error {
     transform: none;
   }
 
-  /* FAQ */
+
+  
   .faq {
     padding: 80px 20px;
   }
@@ -837,7 +783,7 @@ input.input-error {
     padding: 0 var(--small-gap);
   }
 
-  /* Footer */
+
   .footer-nav {
     flex-direction: column;
     align-items: center;
