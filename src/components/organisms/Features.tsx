@@ -36,7 +36,7 @@ export const Features = () => {
         {activeFeature && (
           <article className="tab-panel active">
             <div className="feature-box">
-              <div className="blue-box"></div>
+
               <img src={activeFeature.image} alt={activeFeature.title} />
             </div>
             <div className="text">
