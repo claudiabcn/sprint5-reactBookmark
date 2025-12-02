@@ -4,9 +4,9 @@ import { Icon } from '../atoms/Icon';
 import { Button } from '../atoms/Button';
 
 export const MobileMenu = ({items, isOpen, onClose}: MobileMenuProps) => {
-    if (!isOpen) return null;
+
     return (
-    <div className="mobile-menu-overlay" style={{ display: 'flex' }}>
+<div className={`mobile-menu-overlay ${isOpen ? 'is-open' : ''}`}>
       <div className='mobile-menu-header'>
         <Logo variant="whiteplus" />
         <button onClick={onClose} className="close-button">
