@@ -1,8 +1,8 @@
 export interface ButtonProps {
   children: React.ReactNode;
-  variant: 'blue' | 'red' | 'light' | 'red2';
+  variant: 'blue' | 'red' | 'light' | 'white';
   onClick?: () => void;
-  type?: 'button' | 'submit' | 'reset';
+  type?: 'button' | 'submit';
 }
 
 export interface LogoProps {

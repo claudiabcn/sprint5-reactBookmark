@@ -17,7 +17,7 @@ export const MobileMenu = ({items, isOpen, onClose}: MobileMenuProps) => {
         {items.map((item) => (
           <a key={item.href} href={item.href} onClick={onClose}>{item.label}</a>
         ))}
-        <Button variant="light">LOGIN</Button>
+        <Button variant="white">LOGIN</Button>
    
         <div className="social-icons">
           <Icon variant="facebook" />
