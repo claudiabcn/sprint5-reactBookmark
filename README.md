@@ -72,7 +72,7 @@ application using **React** and **TypeScript**.
 1.  **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/claudiabcn4/sprint5-reactBookmark
+    git clone [https://github.com/claudiabcn4/sprint5-reactBookmark](https://github.com/claudiabcn/sprint5-reactBookmark.git)
     ```
 
 2.  **Install Dependencies:**
