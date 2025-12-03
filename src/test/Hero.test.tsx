@@ -2,7 +2,7 @@ import { describe, it, expect,vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom"; 
 import { Hero } from '../components/organisms/Hero'; 
-global.alert = vi.fn();
+vi.stubGlobal('alert', vi.fn());
 describe("Hero Component", () => {
   
   it("should render the main title", () => {

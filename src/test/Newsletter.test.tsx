@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom"; 
 import { Newsletter } from '../components/organisms/Contact'; 
 
-global.alert = vi.fn();
+vi.stubGlobal('alert', vi.fn());
 
 describe("Newsletter Component - Critical Tests", () => {
   

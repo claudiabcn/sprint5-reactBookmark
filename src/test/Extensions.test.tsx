@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Extensions } from '../components/organisms/Extensions';  
 
-global.alert = vi.fn();
+vi.stubGlobal('alert', vi.fn());
 
 const mockBrowsers = [
   { name: 'Chrome', version: '62', image: 'path/to/chrome.svg' },
