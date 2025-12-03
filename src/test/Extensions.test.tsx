@@ -2,7 +2,9 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Extensions } from '../components/organisms/Extensions';  
+
 global.alert = vi.fn();
+
 const mockBrowsers = [
   { name: 'Chrome', version: '62', image: 'path/to/chrome.svg' },
   { name: 'Firefox', version: '55', image: 'path/to/firefox.svg' },
