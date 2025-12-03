@@ -43,6 +43,7 @@
 }
 
 @media (max-width: 768px) {
+
   .footer-nav {
     padding-left: var(--section-padding-horizontal-mobile);
     padding-right: var(--section-padding-horizontal-mobile);

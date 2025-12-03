@@ -1,8 +1,7 @@
 .newsletter {
   background-color: var(--primary-blue);
   color: white;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
   text-align: center;
 }
 
@@ -69,4 +68,5 @@ input.input-error {
       padding-left: var(--section-padding-horizontal-mobile);
       padding-right: var(--section-padding-horizontal-mobile);
   }
+
 }

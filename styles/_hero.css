@@ -66,8 +66,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: var(--section-padding-vertical-mobile); 
+    padding-bottom: var(--section-padding-vertical-mobile);
   }
 
   .hero-container {
