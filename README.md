@@ -17,7 +17,6 @@ application using **React** and **TypeScript**.
 - **TypeScript**
 - **Vite**
 - **CSS**
-- **Vite**
 - **npm**
 
 ## 📋 Files:
