@@ -1,0 +1,113 @@
+.extension {
+  padding-top: var(--section-padding-vertical-desktop);
+  padding-bottom: var(--section-padding-vertical-desktop);
+  text-align: center;
+}
+
+.extension-header {
+  margin: 0 auto 40px;
+  padding: 0 var(--section-padding-horizontal-desktop);
+  max-width: 1200px;
+}
+
+.extension-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.extension-header p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.extension-cards {
+  display: flex;
+  justify-content: center;
+  gap: var(--standard-gap);
+  flex-wrap: wrap;
+  padding: 0 var(--section-padding-horizontal-desktop);
+}
+
+.card {
+  background-color:white;
+  border-radius: 10px;
+  padding: var(--standard-gap);
+  width: 300px;
+  box-shadow: var(--shadow-light);
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform var(--transition);
+}
+
+.card img {
+  height: 40px;
+  margin-bottom: var(--small-gap);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-bottom: var(--small-gap);
+}
+
+.card-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-light);
+  margin-bottom: var(--small-gap);
+  border-top: 3px dotted var(--border-light);
+}
+
+.card .btn-blue {
+  width: 100%;
+}
+
+
+@media (min-width: 769px) {
+  .extension-cards {
+    align-items: center;
+  }
+
+  .card:nth-child(1) {
+    transform: translateY(-32px);
+  }
+
+  .card:nth-child(3) {
+    transform: translateY(32px);
+  }
+}
+
+@media (max-width: 768px) {
+  .extension {
+    padding-top: var(--section-padding-vertical-mobile);
+    padding-bottom: var(--section-padding-vertical-mobile);
+  }
+  
+  .extension-header {
+      padding-left: var(--section-padding-horizontal-mobile);
+      padding-right: var(--section-padding-horizontal-mobile);
+  }
+
+  .extension-cards {
+    padding-left: var(--section-padding-horizontal-mobile);
+    padding-right: var(--section-padding-horizontal-mobile);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .extension .card {
+    width: 90%;
+    margin-top: 0;
+    transform: none;
+  }
+}

@@ -1,0 +1,29 @@
+import type {MobileMenuProps} from '../../config/types';
+import { Logo } from '../atoms/Logo';
+import { Icon } from '../atoms/Icon';
+import { Button } from '../atoms/Button';
+
+export const MobileMenu = ({items, isOpen, onClose}: MobileMenuProps) => {
+
+    return (
+<div className={`mobile-menu-overlay ${isOpen ? 'is-open' : ''}`}>
+      <div className='mobile-menu-header'>
+        <Logo variant="whiteplus" />
+        <button onClick={onClose} className="close-button">
+          <Icon variant="close" />
+        </button>
+      </div>
+      <div className="mobile-menu-content">
+        {items.map((item) => (
+          <a key={item.href} href={item.href} onClick={onClose}>{item.label}</a>
+        ))}
+        <Button variant="white">LOGIN</Button>
+   
+        <div className="social-icons">
+          <Icon variant="facebook" />
+          <Icon variant="twitter" />
+        </div>
+      </div>
+    </div>
+  );
+};
