@@ -28,6 +28,7 @@ application using **React** and **TypeScript**.
 │   ├── package.json
 │   ├── vite.config.ts
 │   ├── public/
+│   │   ├── images/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── atoms/
@@ -89,9 +90,10 @@ application using **React** and **TypeScript**.
 
 ## 📸 Demo:
 
-[https://sprint5.vercel.app/](https://sprint5-5.vercel.app/)
+https://sprint5-react-bookmark.vercel.app/
 
-![demoPhoto](./assets/img/demo-img.png)
+<img width="1207" height="593" alt="image" src="https://github.com/user-attachments/assets/0a31e6ac-ec18-4f26-85ef-0300908aec51" />
+
 
 ## ⭐ Learnings and challenges:
 
