@@ -1,5 +1,3 @@
-/* _hero.css */
-
 .hero {
   padding-top: 80px;
   padding-bottom: 100px;
@@ -66,7 +64,6 @@
   border-bottom-left-radius: 180px;
 }
 
-/* Media Queries (Mobile) */
 @media (max-width: 768px) {
   .hero {
     padding-top: 80px;

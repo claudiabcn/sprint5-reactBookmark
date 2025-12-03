@@ -1,5 +1,3 @@
-/* _header.css */
-
 .header {
   background-color: white;
   padding: 20px 0;
@@ -56,15 +54,13 @@
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Oculto en desktop */
+  display: none;/
 }
 
 .menu-toggle img {
   height: 24px;
   width: 24px;
 }
-
-/* --- Menú Móvil --- */
 
 .mobile-menu-overlay {
   position: fixed;
@@ -137,7 +133,6 @@
   font-weight: bold;
 }
 
-/* Media Queries (Desktop) */
 @media (max-width: 768px) {
   .nav-container {
     padding-left: var(--section-padding-horizontal-mobile);

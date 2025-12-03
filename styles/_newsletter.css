@@ -1,5 +1,3 @@
-/* _newsletter.css */
-
 .newsletter {
   background-color: var(--primary-blue);
   color: white;
@@ -62,7 +60,6 @@ input.input-error {
   text-align: left;
 }
 
-/* Media Queries (Mobile) */
 @media (max-width: 768px) {
   .newsletter-form {
       padding-left: var(--section-padding-horizontal-mobile);
