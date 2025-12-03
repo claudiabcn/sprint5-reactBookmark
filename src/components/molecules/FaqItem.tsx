@@ -14,7 +14,7 @@ export const FaqItem = ({ title, description }: FAQ) => {
       >
         <span>{title}</span>
         <img 
-          src="../assets/images/icon-arrow.svg" 
+          src="/images/icon-arrow.svg" 
           alt="arrow"
           className={`faq-arrow ${isOpen ? 'open' : ''}`}
         />

@@ -18,7 +18,7 @@ export const Hero = () => {
         </div>
         <div className="hero-image">
 
-        <img src="../assets/images/illustration-hero.svg"
+        <img src="/images/illustration-hero.svg"
               alt="Hero image"
               className="hero-img"/>
           </div>
