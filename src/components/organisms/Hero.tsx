@@ -18,7 +18,11 @@ export const Hero = () => {
         </div>
         <div className="hero-image">
 
+<<<<<<< HEAD
         <img src="/images/illustration-hero.svg"
+=======
+        <img src="/assets/images/illustration-hero.svg"
+>>>>>>> ed15dfa93963afcb130ad0b0cb2284e7b7872df6
               alt="Hero image"
               className="hero-img"/>
           </div>
